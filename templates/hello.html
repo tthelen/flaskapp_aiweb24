@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>HLLLO WORLD!</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="{{ url_for('send_asset', path='style.css') }}">
 </head>
 <body>
 
 <h1>Hello world!</h1>
 
-<img src="/assets/hllloworld.jpg" alt="HLLLO">
+<img src="{{ url_for('send_asset', path='hllloworld.jpg') }}" alt="HLLLO">
 
 </body>
 </html>
